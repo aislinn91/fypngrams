@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Predictiteacs</string>
+    <string name="button_triail">Bain triail as</string>
+    <string name="bain_triail_as">bain triail as</string>
+    <string name="title_activity_leathanach_nua">leathanachNua</string>
+    <string name="chuir_an_gaeilge_isteach_sa_mbosca">Chuir an gaeilge isteach sa mbosca</string>
+</resources>
