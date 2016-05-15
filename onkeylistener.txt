@@ -1,0 +1,20 @@
+/**attempt at an onkeylistener**/
+saving for backup
+
+        //creating an onkeylistener event
+        teacs.setOnKeyListener(new EditText.OnKeyListener(){
+            //method that on the condition that a key is pressed will cause the text in the edittext box to disappear
+            public boolean onKey(View v, int KeyCode, KeyEvent event) {
+                if (event.getAction() == KeyEvent.ACTION_DOWN) {
+                    switch (KeyCode) {
+                        case KeyEvent.KEYCODE_ENTER:
+                            //clearing the edittext
+                            teacs.setText("");
+                            return true;
+                        default:
+                            break;
+                    }
+                }
+                return false;
+            }
+        });
