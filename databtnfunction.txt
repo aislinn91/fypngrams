@@ -1,0 +1,25 @@
+ //trying to get data from test data back in form of a string
+        databtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                //String to store word taken in
+                String inputstr = teacs.getText().toString();
+
+                Scanner myFile = null;
+
+                //read in text file
+                try {
+                    DataInputStream textFileStream =new DataInputStream(getAssets().open(String.format("testdata.txt")));
+                    myFile = new Scanner(new File(textFileStream));
+                }
+                catch(FileNotFoundException e){};
+                //while the text file has another line
+                while (myFile.hasNextLine()) {
+                    //take in next available strings and store in string variables str (nonfadas) and str2 (fadas) respectively
+                    String str = myFile.next();
+
+
+
+
+            }
+        });
